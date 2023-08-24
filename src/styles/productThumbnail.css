@@ -1,0 +1,28 @@
+.product-thumbnail {
+    max-width: 15vw;
+    text-align: center;
+    margin: 1vh;
+    padding: 1vh;
+    background-color: #beb0b038;
+    border-radius: 2vh;
+    transition: transform 0.3s, box-shadow 0.3s; /* Apply smooth transitions */
+    transform-origin: center; /* Set the transform origin to the bottom center */
+
+}
+
+.product-thumbnail:hover {
+    transform: scale(1.1) translateY(-5%); /* Scale and lift the element on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Apply a shadow on hover */
+}
+
+.product-image {
+    max-height: 10vh;
+    max-width: 15vw;
+}
+
+.product-title {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1em;
+}
