@@ -3,6 +3,7 @@ import '../styles/homescreen.css';
 import { useEffect, useState } from "react";
 import ProductThumbnail from "../components/productThumbnail"
 import { fetchProducts } from '../common/services';
+import NavBar from "../components/navBar"
 
 function Homescreen() {
     const [products, setProducts] = useState([])
