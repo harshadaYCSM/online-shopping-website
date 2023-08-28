@@ -1,14 +1,13 @@
 import { NavLink } from "react-router-dom";
+import '../styles/header.css'
 
 function Header() {
 
     return (
         <div className="header">
-            <p className="title">MyCart</p>
+            <div className="title">QuickCart</div>
             <input placeholder="Search..." />
-            <li>
-          <NavLink to="/profile" activeClassName="active">Profile</NavLink>
-        </li>
+            <NavLink to="/profile" activeClassName="active">Profile</NavLink>
         </div>
     )
 }

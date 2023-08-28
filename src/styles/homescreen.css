@@ -1,3 +1,7 @@
+.homescreen {
+    padding-top: 10vh;
+}
+
 .product-container {
     display: inline-flex;
     flex-wrap: wrap;

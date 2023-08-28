@@ -1,0 +1,15 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 5vh;
+    background-color: antiquewhite;
+    padding: 1vh;
+}
+
+.navbar a {
+    min-width: 25vw;
+}
