@@ -9,6 +9,7 @@ function Thumbnail(props) {
             <img className="product-image" src={props.image} alt={props.title}></img>
             <p className="product-title">{props.title}</p>
             <p className="product-price">Rs. {props.price}</p>
+            <button className='buy-button'>Buy</button>
             <Rating
                 count={5}
                 value={props.rating.rate}

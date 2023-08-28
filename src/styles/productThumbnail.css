@@ -5,23 +5,31 @@
     padding: 1vh;
     background-color: #beb0b038;
     border-radius: 2vh;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     /* Apply smooth transitions */
     transform-origin: center;
     /* Set the transform origin to the bottom center */
-
+    overflow: hidden;
+    border: 1px solid transparent; /* Add a transparent border */
 }
 
 .product-thumbnail:hover {
-    transform: scale(1.1) translateY(-5%);
+    transform: scale(1.1) translateY(-1%);
     /* Scale and lift the element on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     /* Apply a shadow on hover */
+    background-color: #beb0b0; /* Change the color on hover */
+    border-color: #999; /* Change the border color on hover */
 }
 
 .product-image {
     max-height: 10vh;
     max-width: 15vw;
+    transition: transform 0.3s; /* Add transform transition */
+}
+
+.product-thumbnail:hover .product-image {
+    transform: scale(1.05); /* Scale the image on hover */
 }
 
 .product-title {
@@ -29,4 +37,28 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1em;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.3s; /* Add opacity transition */
+}
+
+.product-thumbnail:hover .product-title {
+    opacity: 1; /* Fade in the title on hover */
+}
+
+/* Add styles and transitions to the "Buy" button within the product thumbnail */
+.buy-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Lift the button slightly on hover */
 }
